@@ -4,11 +4,11 @@ CLASS zcl_bench_executor DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
     METHODS execute_benchmark
       IMPORTING io_benchmark      TYPE REF TO zif_bench_benchmark
       RETURNING VALUE(rt_results) TYPE zbench_results.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
