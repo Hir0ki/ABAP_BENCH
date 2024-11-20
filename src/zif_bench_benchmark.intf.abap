@@ -10,9 +10,10 @@ INTERFACE zif_bench_benchmark
     RETURNING VALUE(rs_benchmark_settings) TYPE zbench_settings.
 
 
+
   METHODS generate_benchmark_data
     IMPORTING iv_amount TYPE int8
-    EXPORTING et_data   TYPE STANDARD TABLE
+    EXPORTING et_data   TYPE any
     RAISING   zcx_bench_benchmark_error.
 
   METHODS execute_iteration

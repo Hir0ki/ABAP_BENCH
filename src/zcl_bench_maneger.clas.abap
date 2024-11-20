@@ -4,10 +4,10 @@ CLASS zcl_bench_maneger DEFINITION
   CREATE PUBLIC .
 
   PUBLIC SECTION.
-  PROTECTED SECTION.
-  PRIVATE SECTION.
     METHODS run_benchmark
       IMPORTING io_benchmark TYPE REF TO zif_bench_benchmark.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
